@@ -1,0 +1,670 @@
+/*
+* Original Design: dark_contrast 1.0 sidebarless by Emin Özlem  http://www.tilqi.com/ & http://www.prosoftwarez.com/
+Special thanks to b2developers for this lovely customizable software
+*/
+
+@import url("../../rsc/css/basic.css");	/* Import basic styles */
+@import url("../../rsc/css/img.css");	/* Import standard image styles */
+@import url("../../rsc/css/blog_elements.css");	/* Import standard blog elements styles */
+@import url("../../rsc/css/forms.css");	/* Import default form styles */
+@import url("../../rsc/css/comments.css");	/* Import default comment styles */
+
+
+/* -------------------[ Main Page Elements ]------------------- */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+body{
+	background: #161c25 url(img/bg1.png) top right no-repeat;
+	color: #fff;
+	line-height: 20px;
+	font-size: 11px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Arial, sans-serif;
+	margin:0;
+}
+
+/*
+//////////////// Main layout
+*/
+
+#header{
+	padding: 16px 0 15px 0;
+	height: 160px;
+}
+
+#header .inner{
+	width: 94%;
+	margin: 0px auto;
+	padding: 20px 0 0 0;
+}
+
+#menu{
+	margin: 10px 0 0 0;
+}
+
+#content{
+width: 100%;
+margin: 0 auto;
+padding: 0 0 0 0;
+}
+
+
+#content .inner{
+	margin: 0 auto;
+	padding: 1px 0 0 0;
+}
+
+
+#footer{
+font-family:tahoma,geneva,verdana,sans-serif;
+font-size: 8pt;
+color: #8AA49C;
+width:100%;
+font-size: 8pt;
+line-height: 160%;
+clear: both;
+margin: 0px auto;
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+border-top: 1px dashed #CCCCCC;
+}
+
+#footer a {
+color: #cfe0fb;
+}
+
+#footer p {
+margin: 0;
+}
+/*******************************
+/*
+//////////////// #header styles
+*/
+
+
+
+/* -------------------[ Headings ]------------------- */
+
+h1, h2, h3, h4, h5, h6, h7{
+	font-family: "Myriad", "Myriad Pro", Helvetica, sans-serif;
+	margin: 0 0 0.5em 0;
+}
+
+h1{
+	font-size: 1em;
+}
+
+h2{
+	font-size: 1.7em;
+}
+
+h3{
+	font-size: 1.4em;
+}
+
+a img{
+	border: 0;
+}
+
+a:focus { outline: none; }
+
+
+a.image-anchor{
+	border: 0 !important;
+}
+
+
+
+h1.sectionhead, h2.sectionhead, h2#trackbacks, h3.feedback_section, h3.comment_form_title  {
+color: #c0c9d7;
+line-height:100%;
+font-weight: bold;
+font-size:10pt;
+letter-spacing: 1px;
+margin: 0;
+padding: 10px 15px;
+margin-top: 50px;
+border-bottom: 1px solid #3e4c60;
+}
+
+.entry h1,.entry h2,.entry h3, .entry h4, .entry h5, .entry h6, .entry h7 {
+margin-bottom: 10px;
+}
+
+
+/* -------------------[ Links ]------------------- */
+
+a {
+color: #3399CC;
+text-decoration: none;
+}
+
+a:hover, a:active {
+text-decoration: underline;
+color: #B8D2DC;
+}
+
+
+.post h2 {
+color: #FFFFFF;
+background: url(img/news.gif) 0 3px no-repeat;
+padding-left: 45px;
+padding-top: 15px;
+height: 40px;
+text-align: left;
+margin-top: 40px;
+font-style: italic;
+font-weight: bold;
+line-height: 1.2em;
+}
+			
+.post h1 a, .post h2 a, .featurepost h2 a, .featurepost h1 a {
+			color: #FFFFFF;
+			text-decoration: none;
+			border: 0;
+			padding: 0 !important;
+}
+.post h3 {
+			font-family: "Myriad", "Myriad Pro", Helvetica, sans-serif;
+			font-style: italic;
+			font-weight: bold;
+		}
+
+#footer a:hover, #footer a:active {
+text-decoration:underline;
+color:#fff;
+}
+
+/* -------------------[ Images ]------------------- */
+
+img.alignright {
+float: right;
+clear: right;
+margin: 0 0 5px 10px;
+background: #fff;
+padding: 2px;
+border: 1px solid #ccc;
+}
+
+img.alignleft {
+float: left;
+clear: left;
+margin: 0 10px 5px 0px;
+background: #fff;
+padding: 2px;
+border: 1px solid #ccc;
+}
+
+img.centered {
+display: block;
+padding: 2px;
+margin: 0 auto 20px auto;
+border: 1px solid #ccc;
+float: none;
+clear: both;
+}
+
+
+
+
+/* -------------------[ Form Elements ]------------------- */
+
+form.bComment {
+font-size:8pt;
+background: #363e4b;
+padding: 15px 15px 1px;
+margin: 0;
+border: 1px solid #5c636d;
+}
+
+#commentform label {
+display:block;
+margin: 0;
+}
+
+#commentform input {
+width: 170px;
+padding: 1px;
+margin: 0px 5px 10px 0;
+}
+
+#commentform textarea {
+width: 400px;
+padding: 0;
+margin: 0px 0px 10px 0;
+}
+
+#commentform #submit {
+margin: 0 0 20px 0;
+}
+
+#commentform p {
+margin: 5px 0;
+}
+
+
+/* -------------------[ Comments ]------------------- */
+
+div.bComment,
+div.moderation_msg,
+div.feedback_feed_msg {
+font-size:8pt;
+display: block;
+list-style: none;
+padding: 15px 15px 0;
+margin: 0;
+border: none;
+border-bottom:1px dashed #273140;
+}
+
+div.bCommentSmallPrint {
+font-size: 100%;
+margin-bottom: 15px;
+}
+
+#comment_preview {
+background-color: #f2ecce;
+}
+
+/* -------------------[ Misc Tags and Classes ]------------------- */
+
+#header .widget_core_coll_tagline {
+color:#FAF7E8;
+font-size: 12pt;
+padding: 0 100px;
+margin: 0;
+text-align:center;
+}
+
+.post ul, .singlepost ul {
+list-style-type: none;
+}
+
+.post ul li, .singlepost ul li {
+list-style-type:none;
+background: url(img/bullit.gif) 0 4px no-repeat;
+padding: 0 0 2px 14px;
+}
+
+p {
+margin-top: 0px;
+margin-bottom: 4px;
+}
+
+acronym, abbr, span.caps {
+cursor: help;
+}
+
+acronym, abbr {
+border-bottom: 1px dotted #999;
+}
+
+* html acronym, abbr {
+border-bottom: 1px dashed #999;
+}
+
+blockquote {
+background-color: #242b33;
+padding-left:5px;
+color: #c1d8e4;
+font-family: "Trebuchet MS", Verdana;
+font-style:italic;
+font-size: 130%;
+font-weight:bold;
+letter-spacing: 1px;
+}
+
+blockquote:hover {
+background-color: #3d434a;
+}
+
+.center {
+text-align: center;
+}
+
+a img, img a {
+border: none;
+}
+
+
+table.prevnext_post {
+}
+
+.navigation {
+text-align: left;
+margin:0;
+padding: 10px 15px;
+}
+
+.alignleft {
+float:left;
+}
+
+.alignright {
+float:right;
+}
+
+.entry {
+padding: 0;
+margin: 0;
+}
+
+.postinfo {
+color: #999999;
+font-family:tahoma,geneva,verdana,sans-serif;
+font-size: 8pt;
+background: url(img/comm2.gif) 0 3px no-repeat;
+clear: both;
+margin: 0 0 5px;
+padding-left: 9px;
+}
+
+
+.post{
+border-bottom: 1px dashed #1d4d66;
+padding: 0;
+}
+
+.featurepost {
+margin: 0;
+padding: 15px 15px 5px;
+background:#F2ECCE;
+border-bottom:1px solid #CCC9B8;
+}
+
+code {
+font: 1.1em 'Courier New', Courier, Fixed;
+}
+
+hr {
+display: block;
+clear:both;
+}
+
+p.bMore a {
+color: #5F828D;
+text-decoration:none;
+background: url(img/arrow_right.gif) 100% 70% no-repeat;
+padding-right:16px;
+}
+
+/* -------------------[ Search ]------------------- */
+
+.SearchField {
+font-size:8pt;
+width: 140px;
+margin-right: 2px;
+}
+.search p {
+margin-bottom: 0;
+}
+.search {
+margin-bottom: 15px;
+}
+.search .submit {
+font-size:8pt;
+}
+
+
+/* ---------------[ Tables ]--------------- */
+
+.entry table {
+margin-bottom:15px;
+padding: inherit;
+}
+
+.entry tr, .entry td, .entry th {
+margin:auto; padding: inherit;
+}
+
+.entry td, .entry th {
+padding:8px;
+vertical-align:top;
+}
+
+.entry th {
+font-weight:bold;
+background:#263040;
+}
+
+.entry td {
+border:1px solid #263040;
+}
+
+/* ---------------[ Related Entries ]--------------- */
+
+.related {
+margin: 0 0 1px;
+background:#eee;
+padding:10px 10px 8px;
+}
+
+.related ul {
+line-height:130%;
+margin: 0;
+padding-left:0;
+list-style-type: none;
+}
+
+.related ul li {
+list-style-type:none;
+padding: 0 0 0 14px;
+margin: 0 0 2px;
+background: url(img/bullit.gif) 0 3px no-repeat;
+}
+
+ul#archives {
+margin: 0 0 15px 5px;
+padding: 0;
+}
+
+ul#archives ul {
+padding:0;
+}
+
+ul#archives ul li {
+background:transparent;
+padding-left:0;
+margin:0;
+}
+
+ul#archives ul ul {
+margin:0;
+margin-left: 10px;
+padding:0;
+}
+
+
+
+/*
+* Header / bloglist on top:
+*/
+div#header ul {
+float:right;
+list-style-type:none;
+margin: 0;
+padding: 6px 4px;
+}
+div#header li {
+margin: 0;
+display: inline;
+padding: 0 1ex 0 0;
+}
+div#header li a {
+font-weight: bold;
+font-style:italic;
+color: #fff;
+}
+div#header li a:hover {
+color: #666;
+text-decoration: underline;
+}
+div#header li a.selected {
+text-decoration: underline;
+}
+
+div.widget_core_coll_title {	
+font-family: "Forte", Trebuchet MS;
+	text-align: center;
+	padding-top: 10px;
+}
+div.widget_core_coll_title a {	
+font-family: "Forte", Trebuchet MS;
+	text-align: center;
+	padding-top: 10px;
+}
+
+
+/*
+//////////////// #menu styles
+*/
+
+#menu {
+border-right: 1px dashed #346983;
+	clear: both;
+	float: left;
+	height: 30px;
+	list-style: none;
+}  
+
+#menu li {
+	float: left;
+}
+
+#menu a, #menu a:visited {
+	margin:4px 16px 4px 0;
+	text-decoration:none;
+	color: #bbb;
+	font-style: italic;
+	text-align: right;
+	text-decoration: none;
+	float: left;
+}
+
+#menu a:hover {
+	color: #65A2B6;
+	border-bottom: 1px #fff solid;
+}
+
+/*body#darko #menu a{ removed because not valid through css 2.1
+	color: #fff;
+	text-shadow: #000 0 1px 1px;
+	text-decoration: none;
+}
+
+/*====================================0*/
+
+#content .inner .post{
+	margin: 35px 0 0 0;
+	padding: 35px 20px 0 140px;
+	position: relative;
+}
+
+/********* Extra's */
+
+
+.plinks {
+padding-top: 10px;
+padding-bottom: 10px;
+color: #CCCCCC;
+text-align:center;
+font-family: "Algerian", Arial;
+font-size: 24px;
+font-weight:bold;
+border-top: 1px solid #CCCCCC;
+}
+
+.post h2 a:hover {
+color: #CCCCCC;
+text-decoration: underline;
+}
+
+.prevnext_post a {
+font-size: 110%;
+letter-spacing: 0;
+font-weight: bold;
+color:#305C74;
+font-family: "Tahoma", Arial;
+text-decoration: underline;
+}
+
+code {
+padding-left: 10px;
+color:#166753;
+border-left: 4px solid #8b2265;
+border-right: 4px solid #8b2265;
+
+}
+
+#sidebarwrap {
+width: 21%;
+margin: 0 auto;
+float: left;
+padding-right: 4%;
+}
+
+#sidebarr {
+padding-top: 80px;
+padding-right: 0;
+margin: 0 auto;
+}
+
+#sidebarr h2{
+color: #126681;
+}
+
+#sidebarr ul li {
+list-style-type: none;
+margin: 0 0 10px;
+padding: 0;
+}
+
+#sidebarr ul li ul {
+list-style-type: square;
+margin: 0;
+padding: 0;
+}
+
+#sidebarr ul li ul li {
+list-style-type:none;
+padding-left:15px;
+margin:0;
+background:url(img/bullt.gif) 0 5px no-repeat;
+}
+#contentleft {
+padding-left: 6%;
+width: 65%;
+margin: 0px auto;
+float:left;
+padding-right: 2%;
+}
+
+#bCalendarToday {
+	border: 1px solid #3399CC !important;
+	background-color: #3399CC !important;
+	color: #fff;
+}
+form.bComment .submit, form.bComment .preview, .compact_search_form .submit, #content .extended_search_form .submit {
+	color: #fff;
+	background-color: #3399CC;
+	border-radius: 0px !important;
+	border:1px solid #3399CC !important;
+	cursor: pointer;
+}
+#content .extended_search_form .submit {
+	margin-left: 3px;
+}
+form.bComment .submit:hover, form.bComment .preview:hover, .compact_search_form .submit:hover, #content .extended_search_form .submit:hover {
+	opacity: 0.7;
+	background-color: #3399CC;
+	color: #fff;
+}
+blockquote p {
+	padding-top: 10px;
+	color: #222;
+}
